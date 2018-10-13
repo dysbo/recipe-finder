@@ -1,14 +1,16 @@
 import React, { Component } from 'react';
-import logo from '../img/logo.svg';
-import '../scss/App.css';
+import '../scss/App.scss';
+import Header from './header';
+import Footer from './footer';
 
-class App extends Component {
-  render() {
-    return (
-      <div className="App">
-      </div>
-    );
-  }
-}
+const App = () => (
+  <div className="App container">
+    <Header title="Recipe Finder" />
+    <div className="Body">
+      Placeholder
+    </div>
+    <Footer />
+  </div>
+);
 
 export default App;
